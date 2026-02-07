@@ -43,16 +43,16 @@ export const projects = [
     featured: false,
   },
 
-  //   {
-  //     id: 4,
-  //     title: "MOWJ Technologies",
-  //     description:
-  //       "A full-service digital agency website delivering marketing, graphic design, and modern web development solutions.",
-  //     image: "/images/projects/taskapp.webp",
-  //     technologies: ["Wordpress", "Elementor", "PHP", "MySQL"],
-  //     liveUrl: "https:mowjglobal.com",
-  //     featured: false,
-  //   },
+    {
+      id: 4,
+      title: "MOWJ Technologies",
+      description:
+        "A full-service digital agency website delivering marketing, graphic design, and modern web development solutions.",
+      image: "/images/projects/mowj.webp",
+      technologies: ["Wordpress", "Elementor", "PHP", "MySQL"],
+      liveUrl: "https://shahreyarhabibi.github.io/mowj-website-static",
+      featured: false,
+    },
 
   //   {
   //     id: 5,
