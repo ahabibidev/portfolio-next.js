@@ -20,28 +20,32 @@ export default function AboutSection() {
       id="about"
       className="flex flex-col md:mt-10 md:w-280 lg:w-300 xl:w-325 2xl:w-350 m-auto items-center gap-10 md:gap-20 grow pt-20 pb-20"
     >
-      <div className="md:w-235 md:mr-115">
-        <SectionTitles
-          title="About Me"
-          underlinewidth="5%"
-          bg="bg-(--primary-400)"
-        />
-        <p className="text-lg ">
-          With experience building responsive and engaging user interfaces, I
-          specialize in front-end development. My work focuses on creating
-          scalable solutions that balance performance, maintainability, and a
-          polished user experience.
-        </p>
-        <br className="md:hidden" />
-        <p className="text-lg">
-          Currently at{" "}
-          <a href="https://firstrate.com" className="font-bold text-(--text)">
-            FirstRate
-          </a>
-          , I tackle complex challenges that require thoughtful architecture and
-          clear communication. I enjoy coding, coffee, and collaborating closely
-          with teams to deliver seamless digital experiences.
-        </p>
+      {/* Full-width wrapper so it aligns with other sections */}
+      <div className="w-full">
+        {/* Constrained-width text — sits at the left edge */}
+        <div className="md:w-235">
+          <SectionTitles
+            title="About Me"
+            underlinewidth="5%"
+            bg="bg-(--primary-400)"
+          />
+          <p className="text-lg">
+            With experience building responsive and engaging user interfaces, I
+            specialize in front-end development. My work focuses on creating
+            scalable solutions that balance performance, maintainability, and a
+            polished user experience.
+          </p>
+          <br className="md:hidden" />
+          <p className="text-lg">
+            Currently at{" "}
+            <a href="https://firstrate.com" className="font-bold text-(--text)">
+              FirstRate
+            </a>
+            , I tackle complex challenges that require thoughtful architecture
+            and clear communication. I enjoy coding, coffee, and collaborating
+            closely with teams to deliver seamless digital experiences.
+          </p>
+        </div>
       </div>
 
       {/* Globe Background Image */}
@@ -52,10 +56,10 @@ export default function AboutSection() {
           width={600}
           height={600}
           className={`
-      absolute md:-mt-20 md:w-150 -z-50
-      ${isLight ? "opacity-30" : "opacity-20"}
-      drop-shadow-[0_0_40px_rgba(56,189,248,0.35)]
-    `}
+            absolute md:-mt-20 md:w-150 -z-50
+            ${isLight ? "opacity-30" : "opacity-20"}
+            drop-shadow-[0_0_40px_rgba(56,189,248,0.35)]
+          `}
         />
       </div>
 
