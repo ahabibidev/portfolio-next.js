@@ -6,6 +6,7 @@
  * client-side context providers.
  */
 
+import { Analytics } from "@vercel/analytics/next";
 import Providers from "@/components/Providers";
 import "./globals.css";
 
