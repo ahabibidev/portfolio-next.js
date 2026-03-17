@@ -43,7 +43,7 @@ export default function Header() {
         />
 
         {/* Navigation Links */}
-        <ul className="z-10 md:pb-3 md:pt-3 fixed md:left-1/2 left-3/7 -translate-x-1/2 bottom-8  md:bottom-auto bg-(--navbarbackground) md:backdrop-blur-xs backdrop-blur-lg flex border border-(--navbarborder) rounded-4xl py-3 px-6 md:gap-6 gap-5 shadow-md">
+        <ul className="z-10 md:pb-3 md:pt-3 fixed md:left-1/2 left-3/7 -translate-x-1/2 bottom-9  md:bottom-auto bg-(--navbarbackground) md:backdrop-blur-xs backdrop-blur-lg flex border border-(--navbarborder) rounded-4xl py-3 px-6 md:gap-6 gap-5 shadow-md">
           <NavIcons title="Home" link="#" Icon={HomeIcon} />
           <NavIcons title="About Me" link="#about" Icon={AboutIcon} />
           <NavIcons
