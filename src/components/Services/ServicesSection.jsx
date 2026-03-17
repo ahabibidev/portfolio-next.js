@@ -16,7 +16,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="flex flex-col md:w-280 lg:w-300 xl:w-325 2xl:w-350 m-auto justify-center md:gap-8 gap-5 grow pt-15 pb-20 scroll-mt-10 md:scroll-mt-0"
+      className="flex flex-col md:w-280 lg:w-300 xl:w-325 2xl:w-350 m-auto justify-center md:gap-8 gap-5 grow pt-15 pb-20 scroll-mt-0"
     >
       <SectionTitles title="What i'm doing" bg="bg-(--primary)" />
 

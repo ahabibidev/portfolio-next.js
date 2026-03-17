@@ -13,34 +13,50 @@
 
 "use client";
 
-import { createContext, useState, useEffect } from "react";
+import { createContext, useCallback, useSyncExternalStore } from "react";
 
-// Create the context with a default value
 export const ThemeContext = createContext({
   isLight: false,
   toggleTheme: () => {},
 });
 
-/**
- * ThemeProvider Component
- * Wraps the app and provides theme context to all children
- */
+function subscribe(callback) {
+  window.addEventListener("storage", callback);
+  return () => window.removeEventListener("storage", callback);
+}
+
+function getSnapshot() {
+  return localStorage.getItem("theme") === "light";
+}
+
+function getServerSnapshot() {
+  return false; // server always renders dark (matches initial HTML)
+}
+
 export function ThemeProvider({ children }) {
-  // Dark mode by default (isLight = false)
-  const [isLight, setIsLight] = useState(false);
+  // Reads directly from localStorage as the source of truth
+  const isLight = useSyncExternalStore(
+    subscribe,
+    getSnapshot,
+    getServerSnapshot,
+  );
 
-  // Toggle between light and dark mode
-  const toggleTheme = () => setIsLight((prev) => !prev);
+  const toggleTheme = useCallback(() => {
+    const next = !isLight;
 
-  // Update <html> class whenever theme changes
-  useEffect(() => {
+    // 1. Update localStorage (the "external store")
+    localStorage.setItem("theme", next ? "light" : "dark");
+
+    // 2. Sync the DOM class
     const html = document.documentElement;
-
-    if (isLight) {
+    if (next) {
       html.classList.add("light");
     } else {
       html.classList.remove("light");
     }
+
+    // 3. Tell useSyncExternalStore the store changed → triggers re-render
+    window.dispatchEvent(new Event("storage"));
   }, [isLight]);
 
   return (

@@ -11,7 +11,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="flex flex-col items-center pt-20 pb-20 md:w-280 lg:w-300 xl:w-325 2xl:w-350 m-auto grow"
+      className="flex flex-col items-center pt-20 pb-20 md:w-280 lg:w-300 xl:w-325 2xl:w-350 m-auto grow md:scroll-mt-10 -scroll-mt-10"
     >
       <div className="flex gap-10 md:gap-0 flex-col md:flex-row w-full">
         {/* Experience Column */}

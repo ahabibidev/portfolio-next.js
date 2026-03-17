@@ -35,7 +35,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="flex flex-col md:w-280 lg:w-300 xl:w-325 2xl:w-350 m-auto gap-5 md:gap-8 pt-20 pb-20"
+      className="flex flex-col md:w-280 lg:w-300 xl:w-325 2xl:w-350 m-auto gap-5 pt-20 pb-20 -scroll-mt-10"
     >
       {/* Section Title */}
       <SectionTitles title="My Projects" bg="bg-blue-500" />
