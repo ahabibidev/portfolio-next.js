@@ -25,8 +25,8 @@ export default function ContactSection() {
     {
       icon: FiMail,
       label: "Email",
-      value: "shahreyarhabibi@gmail.com",
-      href: "mailto:shahreyarhabibi@gmail.com",
+      value: "ahabibidev@gmail.com",
+      href: "mailto:ahabibidev@gmail.com",
     },
     {
       icon: FiMapPin,
@@ -69,12 +69,12 @@ export default function ContactSection() {
           {/* Heading */}
           <div className="flex flex-col gap-4">
             <h2 className="text-4xl md:text-5xl font-bold text-(--text)">
-              Let's Work <span className="text-(--primary)">Together</span>
+              Let&apos;s Work <span className="text-(--primary)">Together</span>
             </h2>
             <p className="text-(--color) text-lg leading-relaxed">
-              Have a project in mind or just want to say hello? I'd love to hear
-              from you. Fill out the form and I'll get back to you as soon as
-              possible.
+              Have a project in mind or just want to say hello? I&apos;d love to
+              hear from you. Fill out the form and I&apos;ll get back to you as
+              soon as possible.
             </p>
           </div>
 
@@ -154,8 +154,8 @@ export default function ContactSection() {
             `}
           >
             <p className="text-(--color) text-sm italic">
-              "Great things are not done by impulse, but by a series of small
-              things brought together."
+              &quot;Great things are not done by impulse, but by a series of
+              small things brought together.&quot;
             </p>
             <p className="text-(--primary) text-sm mt-2 font-medium">
               — Vincent Van Gogh

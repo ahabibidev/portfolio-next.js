@@ -17,9 +17,19 @@ export const projects = [
     githubUrl: "https://github.com/shahreyarhabibi/hesabi",
     featured: true,
   },
-
   {
     id: 2,
+    title: "Qimat - Real Time Prices",
+    description:
+      "Track real-time prices of everyday essentials, phones, currencies, and fuels—all in one simple PWA.",
+    image: "/images/projects/qimat.webp",
+    technologies: ["Next.js", "Tailwind", "Drizzle"],
+    liveUrl: "https://qimat.vercel.app",
+    githubUrl: "https://github.com/shahreyarhabibi/qimat",
+    featured: true,
+  },
+  {
+    id: 3,
     title: "Portfolio Website",
     description:
       "A personal portfolio showcasing projects and skills with dark/light mode support.",
@@ -31,7 +41,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Hospital Management System",
     description:
       "A simple and efficient system to manage patients, appointments, staff, and billing in hospitals or clinics.",
@@ -44,7 +54,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "MOWJ Technologies",
     description:
       "A full-service digital agency website delivering marketing, graphic design, and modern web development solutions.",
@@ -54,17 +64,6 @@ export const projects = [
     featured: false,
   },
 
-  {
-    id: 5,
-    title: "Qimat - Real Time Prices",
-    description:
-      "Track real-time prices of everyday essentials, phones, currencies, and fuels—all in one simple PWA.",
-    image: "/images/projects/qimat.webp",
-    technologies: ["Next.js", "Tailwind", "Drizzle"],
-    liveUrl: "https://qimat.vercel.app",
-    githubUrl: "https://github.com/shahreyarhabibi/qimat",
-    featured: true,
-  },
   //   {
   //     id: 6,
   //     title: "Blog CMS",

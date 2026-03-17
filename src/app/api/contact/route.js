@@ -10,6 +10,19 @@ import { NextResponse } from "next/server";
 
 // Email HTML template
 function generateEmailHTML({ name, email, subject, message }) {
+  const escapeHtml = (value) =>
+    String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+
+  const safeName = escapeHtml(name);
+  const safeEmail = escapeHtml(email);
+  const safeSubject = subject ? escapeHtml(subject) : "";
+  const safeMessage = escapeHtml(message);
+
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -56,7 +69,7 @@ function generateEmailHTML({ name, email, subject, message }) {
                             </td>
                             <td>
                               <p style="margin: 0; color: #666; font-size: 12px; text-transform: uppercase;">Name</p>
-                              <p style="margin: 5px 0 0 0; color: #1a1a1a; font-size: 16px; font-weight: 600;">${name}</p>
+                              <p style="margin: 5px 0 0 0; color: #1a1a1a; font-size: 16px; font-weight: 600;">${safeName}</p>
                             </td>
                           </tr>
                         </table>
@@ -69,7 +82,7 @@ function generateEmailHTML({ name, email, subject, message }) {
                             </td>
                             <td>
                               <p style="margin: 0; color: #666; font-size: 12px; text-transform: uppercase;">Email</p>
-                              <a href="mailto:${email}" style="display: block; margin: 5px 0 0 0; color: #0ec14c; font-size: 16px; font-weight: 600; text-decoration: none;">${email}</a>
+                              <a href="mailto:${safeEmail}" style="display: block; margin: 5px 0 0 0; color: #0ec14c; font-size: 16px; font-weight: 600; text-decoration: none;">${safeEmail}</a>
                             </td>
                           </tr>
                         </table>
@@ -85,7 +98,7 @@ function generateEmailHTML({ name, email, subject, message }) {
                             </td>
                             <td>
                               <p style="margin: 0; color: #666; font-size: 12px; text-transform: uppercase;">Subject</p>
-                              <p style="margin: 5px 0 0 0; color: #1a1a1a; font-size: 16px; font-weight: 600;">${subject}</p>
+                              <p style="margin: 5px 0 0 0; color: #1a1a1a; font-size: 16px; font-weight: 600;">${safeSubject}</p>
                             </td>
                           </tr>
                         </table>
@@ -101,16 +114,16 @@ function generateEmailHTML({ name, email, subject, message }) {
                     💬 Message
                   </h2>
                   <div style="background-color: #ffffff; border: 2px solid #e8e8e8; border-radius: 12px; padding: 25px;">
-                    <p style="margin: 0; color: #333; font-size: 16px; line-height: 1.7; white-space: pre-wrap;">${message}</p>
+                    <p style="margin: 0; color: #333; font-size: 16px; line-height: 1.7; white-space: pre-wrap;">${safeMessage}</p>
                   </div>
                   
                   <!-- Reply Button -->
                   <table role="presentation" style="width: 100%; margin-top: 30px;">
                     <tr>
                       <td style="text-align: center;">
-                        <a href="mailto:${email}?subject=Re: ${subject || "Your message from my portfolio"}" 
+                        <a href="mailto:${safeEmail}?subject=Re: ${safeSubject || "Your message from my portfolio"}" 
                            style="display: inline-block; background: linear-gradient(135deg, #0ec14c 0%, #0a9e3d 100%); color: #ffffff; text-decoration: none; padding: 15px 40px; border-radius: 50px; font-weight: 600; font-size: 16px;">
-                          Reply to ${name.split(" ")[0]}
+                          Reply to ${safeName.split(" ")[0]}
                         </a>
                       </td>
                     </tr>
