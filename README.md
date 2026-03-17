@@ -139,63 +139,63 @@ A modern, responsive portfolio website built with Next.js, featuring smooth anim
 
 ## 📁 Project Structure
 
-   ```
-   src/
-   ├── app/
-   │   ├── api/
-   │   │   └── contact/
-   │   │       └── route.js        # Contact form API endpoint
-   │   ├── globals.css             # Global styles & CSS variables
-   │   ├── layout.js               # Root layout with metadata
-   │   └── page.js                 # Home page
-   │
-   ├── components/
-   │   ├── Header/
-   │   │   ├── Header.jsx          # Navigation header
-   │   │   └── NavIcons.jsx        # Navigation icons
-   │   │
-   │   ├── Projects/
-   │   │   ├── ProjectCard.jsx     # Individual project card
-   │   │   └── ProjectsSection.jsx # Projects grid with filters
-   │   │
-   │   ├── Services/
-   │   │   ├── Service.jsx         # Service card component
-   │   │   ├── ServicesSection.jsx # Services grid
-   │   │   └── TechnologiesIcons.jsx
-   │   │
-   │   ├── Education/
-   │   │   ├── Education.jsx
-   │   │   └── EducationSections.jsx
-   │   │
-   │   ├── Experience/
-   │   │   ├── Experience.jsx
-   │   │   └── ExperienceSections.jsx
-   │   │
-   │   ├── AboutSection.jsx
-   │   ├── BotpressChat.jsx        # AI chatbot integration
-   │   ├── ContactForm.jsx         # Contact form component
-   │   ├── ContactSection.jsx      # Contact section layout
-   │   ├── DynamicTitle.jsx
-   │   ├── ExperienceSection.jsx
-   │   ├── Footer.jsx
-   │   ├── HeroSection.jsx
-   │   ├── Providers.jsx           # Theme & toast providers
-   │   └── SectionsTitle.jsx
-   │
-   ├── context/
-   │   └── ThemeContext.jsx        # Dark/light theme context
-   │
-   ├── data/
-   │   └── projects.js             # Projects data
-   │
-   └── icons/
-       ├── AboutIcon.jsx
-       ├── ExperienceIcon.jsx
-       ├── HomeIcon.jsx
-       ├── MailIcon.jsx
-       └── ServicesIcon.jsx
-   
-   ```
+```
+src/
+├── app/
+│   ├── api/
+│   │   └── contact/
+│   │       └── route.js        # Contact form API endpoint
+│   ├── globals.css             # Global styles & CSS variables
+│   ├── layout.js               # Root layout with metadata
+│   └── page.js                 # Home page
+│
+├── components/
+│   ├── Header/
+│   │   ├── Header.jsx          # Navigation header
+│   │   └── NavIcons.jsx        # Navigation icons
+│   │
+│   ├── Projects/
+│   │   ├── ProjectCard.jsx     # Individual project card
+│   │   └── ProjectsSection.jsx # Projects grid with filters
+│   │
+│   ├── Services/
+│   │   ├── Service.jsx         # Service card component
+│   │   ├── ServicesSection.jsx # Services grid
+│   │   └── TechnologiesIcons.jsx
+│   │
+│   ├── Education/
+│   │   ├── Education.jsx
+│   │   └── EducationSections.jsx
+│   │
+│   ├── Experience/
+│   │   ├── Experience.jsx
+│   │   └── ExperienceSections.jsx
+│   │
+│   ├── AboutSection.jsx
+│   ├── BotpressChat.jsx        # AI chatbot integration
+│   ├── ContactForm.jsx         # Contact form component
+│   ├── ContactSection.jsx      # Contact section layout
+│   ├── DynamicTitle.jsx
+│   ├── ExperienceSection.jsx
+│   ├── Footer.jsx
+│   ├── HeroSection.jsx
+│   ├── Providers.jsx           # Theme & toast providers
+│   └── SectionsTitle.jsx
+│
+├── context/
+│   └── ThemeContext.jsx        # Dark/light theme context
+│
+├── data/
+│   └── projects.js             # Projects data
+│
+└── icons/
+    ├── AboutIcon.jsx
+    ├── ExperienceIcon.jsx
+    ├── HomeIcon.jsx
+    ├── MailIcon.jsx
+    └── ServicesIcon.jsx
+
+```
 
 ### 📸 Screenshots
 
@@ -224,7 +224,7 @@ A modern, responsive portfolio website built with Next.js, featuring smooth anim
 **Ali Reza Habibi** — Software Engineer
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shahreyarhabibi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ali-reza-habibi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahabibidev)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ahabibi.vercel.app)
 
 </div>

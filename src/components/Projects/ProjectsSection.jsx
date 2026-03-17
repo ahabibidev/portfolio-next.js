@@ -56,7 +56,7 @@ export default function ProjectsSection() {
           All
         </button>
 
-        {allTechnologies.slice(0, 8).map((tech) => (
+        {allTechnologies.slice(0, 6).map((tech) => (
           <button
             key={tech}
             onClick={() => setActiveFilter(tech)}

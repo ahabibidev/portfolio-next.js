@@ -78,7 +78,7 @@ export default function ProjectCard({ project }) {
           {project.title}
         </h3>
 
-        <p className="text-(--color) text-sm mb-4 line-clamp-2">
+        <p className="text-(--color) text-sm md:text-base mb-4 line-clamp-2">
           {project.description}
         </p>
 

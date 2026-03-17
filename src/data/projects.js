@@ -12,7 +12,7 @@ export const projects = [
     description:
       "A wallet to manage your personal income, expenses, and budgets.",
     image: "/images/projects/hesabi.webp",
-    technologies: ["Next.js", "Tailwind", "SQLite"],
+    technologies: ["Next.js", "Tailwind CSS", "SQLite"],
     liveUrl: "https://hesabiapp.vercel.app",
     githubUrl: "https://github.com/shahreyarhabibi/hesabi",
     featured: true,
@@ -23,7 +23,7 @@ export const projects = [
     description:
       "Track real-time prices of everyday essentials, phones, currencies, and fuels—all in one simple PWA.",
     image: "/images/projects/qimat.webp",
-    technologies: ["Next.js", "Tailwind", "Drizzle"],
+    technologies: ["Next.js", "Tailwind CSS", "Drizzle"],
     liveUrl: "https://qimat.vercel.app",
     githubUrl: "https://github.com/shahreyarhabibi/qimat",
     featured: true,
@@ -34,7 +34,7 @@ export const projects = [
     description:
       "A personal portfolio showcasing projects and skills with dark/light mode support.",
     image: "/images/projects/portfolio.webp",
-    technologies: ["Next.js", "Tailwind", "Framer Motion"],
+    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://ahabibi.vercel.app",
     githubUrl: "https://github.com/shahreyarhabibi/portfolio-next.js",
     featured: true,

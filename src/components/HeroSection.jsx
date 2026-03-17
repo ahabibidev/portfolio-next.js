@@ -75,15 +75,12 @@ export default function HeroSection() {
 
         {/* Social Links */}
         <div className="flex gap-5 mt-5">
-          <a
-            aria-label="Send me an Email"
-            href="mailto:shahreyarhabibi@gmail.com"
-          >
+          <a aria-label="Send me an Email" href="mailto:ahabibidev@gmail.com">
             <FaRegEnvelope className="text-(--text) text-xl" />
           </a>
           <a
             aria-label="Visit my LinkedIn Profile"
-            href="https://linkedin.com/in/ali-reza-habibi"
+            href="https://linkedin.com/in/ahabibidev"
           >
             <FaLinkedinIn className="text-(--text) text-xl" />
           </a>

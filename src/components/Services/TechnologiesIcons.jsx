@@ -1,3 +1,4 @@
+import { FaPhp } from "react-icons/fa";
 /**
  * TechnologiesIcons Component (Server)
  * No hooks - pure presentational
@@ -26,8 +27,8 @@ export default function TechnologiesIcons() {
       <TbBrandNextjs className={style} title="NextJS" />
       <FaReact className={style} title="React" />
       <FaPython className={style} title="Python" />
-      <SiTailwindcss className={style} title="Tailwind" />
-      <FaCss3Alt className={style} title="CSS" />
+      <SiTailwindcss className={style} title="Tailwind CSS" />
+      <FaPhp className={style} title="PHP" />
       <AiFillHtml5 className={style} title="HTML5" />
       <SiFlutter className={style} title="Flutter" />
       <SiTypescript className={style} title="TypeScript" />
