@@ -43,28 +43,28 @@ export const projects = [
     featured: false,
   },
 
-    {
-      id: 4,
-      title: "MOWJ Technologies",
-      description:
-        "A full-service digital agency website delivering marketing, graphic design, and modern web development solutions.",
-      image: "/images/projects/mowj.webp",
-      technologies: ["Wordpress", "Elementor", "PHP", "MySQL"],
-      liveUrl: "https://shahreyarhabibi.github.io/mowj-website-static",
-      featured: false,
-    },
+  {
+    id: 4,
+    title: "MOWJ Technologies",
+    description:
+      "A full-service digital agency website delivering marketing, graphic design, and modern web development solutions.",
+    image: "/images/projects/mowj.webp",
+    technologies: ["Wordpress", "Elementor", "PHP", "MySQL"],
+    liveUrl: "https://shahreyarhabibi.github.io/mowj-website-static",
+    featured: false,
+  },
 
-  //   {
-  //     id: 5,
-  //     title: "Mobile Fitness App",
-  //     description:
-  //       "Cross-platform fitness tracking app with workout plans and progress analytics.",
-  //     image: "/images/projects/fitness.webp",
-  //     technologies: ["Flutter", "Firebase", "Dart"],
-  //     liveUrl: "",
-  //     githubUrl: "https://github.com/username/project",
-  //     featured: false,
-  //   },
+  {
+    id: 5,
+    title: "Qimat - Real Time Prices",
+    description:
+      "Track real-time prices of everyday essentials, phones, currencies, and fuels—all in one simple PWA.",
+    image: "/images/projects/qimat.webp",
+    technologies: ["Next.js", "Tailwind", "Drizzle"],
+    liveUrl: "https://qimat.vercel.app",
+    githubUrl: "https://github.com/shahreyarhabibi/qimat",
+    featured: true,
+  },
   //   {
   //     id: 6,
   //     title: "Blog CMS",
