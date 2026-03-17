@@ -30,10 +30,11 @@ export default function AboutSection() {
             bg="bg-(--primary-400)"
           />
           <p className="text-lg">
-            With experience building responsive and engaging user interfaces, I
-            specialize in front-end development. My work focuses on creating
-            scalable solutions that balance performance, maintainability, and a
-            polished user experience.
+            With a strong foundation in both front-end and back-end development,
+            I build scalable, end-to-end solutions with a focus on intuitive and
+            engaging user interfaces. I specialize in front-end development,
+            while also working across the stack to ensure performance,
+            reliability, and maintainability.
           </p>
           <br className="md:hidden" />
           <p className="text-lg">

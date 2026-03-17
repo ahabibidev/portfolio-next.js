@@ -27,17 +27,21 @@ export default function HeroSection() {
       {/* Left Content */}
       <div className="flex items-start flex-col md:w-1/2 gap-6">
         <div className="flex flex-col gap-3">
-          <p className="text-2xl self-start">👋 Hello. I'm</p>
+          <p className="text-2xl self-start">👋 Hello. I&apos;m</p>
           <h1 className="text-7xl self-start font-bold text-(--text)">
             Ali Reza Habibi
           </h1>
         </div>
 
         <p className="text-xl font-normal md:w-5/6">
-          <span className="hero-section-span">Software Engineer </span>
-          specialized in <span className="hero-section-span">Frontend </span>
-          with <span className="hero-section-span">5+ years</span> of shaping
-          digital experiences across web, mobile & desktop.
+          <span className="hero-section-span">
+            Full-Stack Software Engineer
+          </span>{" "}
+          with
+          <span className="hero-section-span"> 3+ years</span> of experience,
+          specializing in
+          <span className="hero-section-span"> Frontend</span> and building
+          seamless digital experiences across web, mobile, and desktop.
         </p>
 
         <ContactButton>Contact Me</ContactButton>

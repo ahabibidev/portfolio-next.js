@@ -11,7 +11,7 @@ export default function Experience() {
       <ExperienceSections
         title="FirstRate Inc"
         year="Nov 2025 - Present"
-        description="Software Engineer - Texas, US"
+        description="Software Engineer - (TX, USA) | Kabul Branch Office"
         dotcolor="bg-(--primary)"
         href="https://firstrate.com"
       />
