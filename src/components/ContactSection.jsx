@@ -57,7 +57,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="flex flex-col md:w-280 lg:w-300 xl:w-325 2xl:w-350 m-auto gap-8 pt-20 pb-20"
+      className="flex flex-col md:w-280 lg:w-300 xl:w-325 2xl:w-350 m-auto md:gap-8 gap-1 pt-20 pb-20"
     >
       {/* Section Title */}
       <SectionTitles title="Get In Touch" bg="bg-red-900" />
@@ -68,10 +68,10 @@ export default function ContactSection() {
         <div className="flex flex-col gap-8">
           {/* Heading */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-(--text)">
+            <h2 className="text-3xl md:text-5xl font-bold text-(--text)">
               Let&apos;s Work <span className="text-(--primary)">Together</span>
             </h2>
-            <p className="text-(--color) text-lg leading-relaxed">
+            <p className="text-(--color) text-base md:text-lg leading-relaxed">
               Have a project in mind or just want to say hello? I&apos;d love to
               hear from you. Fill out the form and I&apos;ll get back to you as
               soon as possible.
@@ -118,7 +118,7 @@ export default function ContactSection() {
           </div>
 
           {/* Social Links */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col md:items-start items-center gap-4">
             <p className="text-(--color) text-sm uppercase tracking-wider font-medium">
               Connect with me
             </p>

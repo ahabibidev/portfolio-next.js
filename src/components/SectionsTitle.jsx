@@ -13,7 +13,7 @@ export default function SectionTitles({ bg, title }) {
 
   return (
     <div className="relative">
-      <h2 className="font-bold text-(--text) text-3xl after:block after:mb-3 after:content-[' '] after:w-[30%] md:after:w-17.5 after:mt-3 after:ml-0.5 after:border-b-4 after:border-(--color) after:opacity-50 after:rounded-full">
+      <h2 className="font-bold text-(--text) md:text-3xl text-2xl after:block after:mb-3 after:content-[' '] after:w-[30%] md:after:w-17.5 after:mt-3 after:ml-0.5 after:border-b-4 after:border-(--color) after:opacity-50 after:rounded-full">
         {title}
       </h2>
       <div

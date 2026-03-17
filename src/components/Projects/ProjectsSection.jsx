@@ -41,7 +41,7 @@ export default function ProjectsSection() {
       <SectionTitles title="My Projects" bg="bg-blue-500" />
 
       {/* Filter Buttons */}
-      <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+      <div className="flex flex-wrap md:gap-2 gap-1 justify-center md:justify-start">
         <button
           onClick={() => setActiveFilter("All")}
           className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300

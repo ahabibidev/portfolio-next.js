@@ -20,7 +20,7 @@ export default function ServicesSection() {
     >
       <SectionTitles title="What i'm doing" bg="bg-(--primary)" />
 
-      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 gap-10">
+      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 gap-5 md:gap-10">
         <Service
           title="Web Development"
           description="Creating responsive and high-performing websites that deliver smooth, enjoyable user experiences."

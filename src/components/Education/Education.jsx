@@ -15,7 +15,12 @@ export default function Education() {
         dotcolor="bg-(--color)"
       />
       <EducationSections
-        title="Afghan Institute of Technology"
+        title={
+          <>
+            Afghan Institute of{" "}
+            <span className="block md:inline">Technology</span>
+          </>
+        }
         year="2020 - 2022"
         description="Diploma in Information Systems"
         dotcolor="bg-(--color)"

@@ -28,12 +28,12 @@ export default function HeroSection() {
       <div className="flex items-start flex-col md:w-1/2 gap-6">
         <div className="flex flex-col gap-3">
           <p className="text-2xl self-start">👋 Hello. I&apos;m</p>
-          <h1 className="text-7xl self-start font-bold text-(--text)">
+          <h1 className="md:text-7xl text-6xl self-start font-bold text-(--text)">
             Ali Reza Habibi
           </h1>
         </div>
 
-        <p className="text-xl font-normal md:w-5/6">
+        <p className="md:text-xl text-base font-normal md:w-5/6">
           <span className="hero-section-span">
             Full-Stack Software Engineer
           </span>{" "}

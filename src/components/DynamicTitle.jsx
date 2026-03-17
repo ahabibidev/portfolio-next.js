@@ -9,7 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function DynamicTitle() {
   return (
-    <h2 className="text-center text-3xl font-semibold text-(--text)">
+    <h2 className="text-center md:text-3xl text-2xl font-semibold text-(--text)">
       Trusted by teams from <br className="md:hidden" />
       <TypeAnimation
         sequence={[

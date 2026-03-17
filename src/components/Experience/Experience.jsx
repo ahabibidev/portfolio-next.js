@@ -11,12 +11,17 @@ export default function Experience() {
       <ExperienceSections
         title="FirstRate Inc"
         year="Nov 2025 - Present"
-        description="Software Engineer - (TX, USA) | Kabul Branch Office"
+        description="Software Engineer - (TX, USA) | Kabul Office"
         dotcolor="bg-(--primary)"
         href="https://firstrate.com"
+        isPresentJob={true}
       />
       <ExperienceSections
-        title="Ulearna Educational Center"
+        title={
+          <>
+            Ulearna Educational <span className="block md:inline">Center</span>
+          </>
+        }
         year="Aug 2024 - Sept 2025"
         description="Front-End Instructor - Kabul, Afghanistan"
         dotcolor="bg-(--color)"

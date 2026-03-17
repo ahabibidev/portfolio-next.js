@@ -21,11 +21,11 @@ export default function Service({ title, description, icon: Icon, iconColor }) {
     >
       <div className="flex gap-3 items-center">
         <Icon
-          className={`relative p-2 w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 ${iconColor}`}
+          className={`relative p-1.5 md:p-2 md:w-12 md:h-12 w-9 h-9 flex items-center justify-center rounded-xl bg-white/5 ${iconColor}`}
         />
-        <h1 className="font-bold text-xl">{title}</h1>
+        <h1 className="font-bold md:text-xl text-base">{title}</h1>
       </div>
-      <p className="mt-3 text-(--color)">{description}</p>
+      <p className="mt-3 md:text-base text-sm text-(--color)">{description}</p>
     </div>
   );
 }

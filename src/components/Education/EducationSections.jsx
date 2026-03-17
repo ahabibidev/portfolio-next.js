@@ -14,21 +14,25 @@ export default function EducationSections({
     <div className="flex flex-col w-full relative">
       {/* Timeline dot and line */}
       <span
-        className={`${hidden} absolute -ml-1 top-2 w-3 h-3 rounded-full ${dotcolor} 
-          after:h-52 md:after:h-44 after:w-0.5 after:bg-(--color) 
-          after:absolute after:rounded-full after:left-[4.4px] after:-z-10 after:opacity-50`}
+        className={`${hidden} absolute -ml-1 top-1 w-3 h-3 rounded-full ${dotcolor} 
+          after:h-46 md:after:h-44 after:w-0.5 after:bg-(--color) 
+          after:absolute after:rounded-full after:left-1.25 after:-z-10 after:opacity-50`}
       />
       <span
-        className={`absolute -ml-1 top-2 w-3 h-3 rounded-full ${dotcolor}`}
+        className={`absolute -ml-1 top-1 w-3 h-3 rounded-full ${dotcolor}`}
       />
 
       {/* Content */}
       <div className="flex ml-5 md:ml-8 flex-col gap-3">
         <div className="flex flex-row justify-between items-center">
-          <h2 className="text-xl font-bold text-(--text)">{title}</h2>
-          <p className="md:mr-20 whitespace-nowrap">{year}</p>
+          <h2 className="text-md md:text-xl font-bold text-(--text)">
+            {title}
+          </h2>
+          <p className="md:text-[16px] text-sm md:mr-20 whitespace-nowrap">
+            {year}
+          </p>
         </div>
-        <div className="flex flex-col gap-0.5">
+        <div className="flex md:text-[16px] text-sm flex-col gap-0.5">
           <p>{description}</p>
         </div>
       </div>

@@ -29,7 +29,7 @@ export default function AboutSection() {
             underlinewidth="5%"
             bg="bg-(--primary-400)"
           />
-          <p className="text-lg">
+          <p className="md:text-lg text-base ">
             With a strong foundation in both front-end and back-end development,
             I build scalable, end-to-end solutions with a focus on intuitive and
             engaging user interfaces. I specialize in front-end development,
@@ -37,7 +37,7 @@ export default function AboutSection() {
             reliability, and maintainability.
           </p>
           <br className="md:hidden" />
-          <p className="text-lg">
+          <p className="md:text-lg text-base">
             Currently at{" "}
             <a href="https://firstrate.com" className="font-bold text-(--text)">
               FirstRate
