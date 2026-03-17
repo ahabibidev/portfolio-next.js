@@ -8,6 +8,27 @@
 
 import { NextResponse } from "next/server";
 
+const RATE_LIMIT_MAX = 5;
+const rateLimitStore = new Map();
+
+function getDayKey() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function getClientIp(request) {
+  const forwarded = request.headers.get("x-forwarded-for");
+  if (forwarded) {
+    return forwarded.split(",")[0].trim();
+  }
+
+  const realIp = request.headers.get("x-real-ip");
+  if (realIp) {
+    return realIp.trim();
+  }
+
+  return "unknown";
+}
+
 // Email HTML template
 function generateEmailHTML({ name, email, subject, message }) {
   const escapeHtml = (value) =>
@@ -155,6 +176,30 @@ function generateEmailHTML({ name, email, subject, message }) {
 
 export async function POST(request) {
   try {
+    // Basic per-IP rate limiting (5 requests/day)
+    const ip = getClientIp(request);
+    const dayKey = getDayKey();
+    const rateKey = `${dayKey}:${ip}`;
+    const currentCount = rateLimitStore.get(rateKey) || 0;
+
+    if (currentCount >= RATE_LIMIT_MAX) {
+      return NextResponse.json(
+        { error: "Rate limit exceeded. Please try again tomorrow." },
+        { status: 429 },
+      );
+    }
+
+    rateLimitStore.set(rateKey, currentCount + 1);
+
+    // Best-effort cleanup of old entries
+    if (rateLimitStore.size > 1000) {
+      for (const key of rateLimitStore.keys()) {
+        if (!key.startsWith(dayKey)) {
+          rateLimitStore.delete(key);
+        }
+      }
+    }
+
     // Parse the request body
     const body = await request.json();
     const { name, email, subject, message } = body;
