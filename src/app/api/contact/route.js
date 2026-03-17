@@ -9,6 +9,10 @@
 import { NextResponse } from "next/server";
 
 const RATE_LIMIT_MAX = 5;
+const MAX_NAME_LENGTH = 50;
+const MAX_EMAIL_LENGTH = 254;
+const MAX_SUBJECT_LENGTH = 150;
+const MAX_MESSAGE_LENGTH = 3000;
 const rateLimitStore = new Map();
 
 function getDayKey() {
@@ -43,6 +47,10 @@ function generateEmailHTML({ name, email, subject, message }) {
   const safeEmail = escapeHtml(email);
   const safeSubject = subject ? escapeHtml(subject) : "";
   const safeMessage = escapeHtml(message);
+  const mailtoSubject = encodeURIComponent(
+    `Re: ${subject || "Your message from my portfolio"}`,
+  );
+  const firstName = safeName.split(" ")[0] || "there";
 
   return `
     <!DOCTYPE html>
@@ -142,9 +150,9 @@ function generateEmailHTML({ name, email, subject, message }) {
                   <table role="presentation" style="width: 100%; margin-top: 30px;">
                     <tr>
                       <td style="text-align: center;">
-                        <a href="mailto:${safeEmail}?subject=Re: ${safeSubject || "Your message from my portfolio"}" 
+                        <a href="mailto:${safeEmail}?subject=${mailtoSubject}" 
                            style="display: inline-block; background: linear-gradient(135deg, #0ec14c 0%, #0a9e3d 100%); color: #ffffff; text-decoration: none; padding: 15px 40px; border-radius: 50px; font-weight: 600; font-size: 16px;">
-                          Reply to ${safeName.split(" ")[0]}
+                          Reply to ${firstName}
                         </a>
                       </td>
                     </tr>
@@ -203,9 +211,13 @@ export async function POST(request) {
     // Parse the request body
     const body = await request.json();
     const { name, email, subject, message } = body;
+    const nameValue = typeof name === "string" ? name.trim() : "";
+    const emailValue = typeof email === "string" ? email.trim() : "";
+    const subjectValue = typeof subject === "string" ? subject.trim() : "";
+    const messageValue = typeof message === "string" ? message : "";
 
     // Validate required fields
-    if (!name || !email || !message) {
+    if (!nameValue || !emailValue || !messageValue.trim()) {
       return NextResponse.json(
         { error: "Name, email, and message are required" },
         { status: 400 },
@@ -214,9 +226,38 @@ export async function POST(request) {
 
     // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    if (!emailRegex.test(emailValue)) {
       return NextResponse.json(
         { error: "Invalid email format" },
+        { status: 400 },
+      );
+    }
+
+    // Validate field lengths
+    if (nameValue.length > MAX_NAME_LENGTH) {
+      return NextResponse.json(
+        { error: `Name must be ${MAX_NAME_LENGTH} characters or less` },
+        { status: 400 },
+      );
+    }
+
+    if (emailValue.length > MAX_EMAIL_LENGTH) {
+      return NextResponse.json(
+        { error: `Email must be ${MAX_EMAIL_LENGTH} characters or less` },
+        { status: 400 },
+      );
+    }
+
+    if (subjectValue.length > MAX_SUBJECT_LENGTH) {
+      return NextResponse.json(
+        { error: `Subject must be ${MAX_SUBJECT_LENGTH} characters or less` },
+        { status: 400 },
+      );
+    }
+
+    if (messageValue.length > MAX_MESSAGE_LENGTH) {
+      return NextResponse.json(
+        { error: `Message must be ${MAX_MESSAGE_LENGTH} characters or less` },
         { status: 400 },
       );
     }
@@ -256,13 +297,18 @@ export async function POST(request) {
           },
         ],
         replyTo: {
-          email: email,
-          name: name,
+          email: emailValue,
+          name: nameValue,
         },
         subject: subject
-          ? `Portfolio Contact: ${subject}`
-          : `New message from ${name}`,
-        htmlContent: generateEmailHTML({ name, email, subject, message }),
+          ? `Portfolio Contact: ${subjectValue}`
+          : `New message from ${nameValue}`,
+        htmlContent: generateEmailHTML({
+          name: nameValue,
+          email: emailValue,
+          subject: subjectValue,
+          message: messageValue,
+        }),
       }),
     });
 
