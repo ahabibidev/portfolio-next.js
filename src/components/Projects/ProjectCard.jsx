@@ -7,22 +7,53 @@
 
 "use client";
 
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import { ThemeContext } from "@/context/ThemeContext";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 export default function ProjectCard({ project }) {
   const { isLight } = useContext(ThemeContext);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+  const [showTouchActions, setShowTouchActions] = useState(false);
+  const hasActions = Boolean(project.githubUrl || project.liveUrl);
+  const overlayActionClass =
+    "inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-white bg-white/20 backdrop-blur-sm transition-all duration-300 hover:bg-(--primary) hover:scale-110";
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(hover: none), (pointer: coarse)");
+
+    const syncTouchMode = () => {
+      const touchMode = mediaQuery.matches;
+      setIsTouchDevice(touchMode);
+
+      if (!touchMode) {
+        setShowTouchActions(false);
+      }
+    };
+
+    syncTouchMode();
+    mediaQuery.addEventListener("change", syncTouchMode);
+
+    return () => mediaQuery.removeEventListener("change", syncTouchMode);
+  }, []);
+
+  const handleCardClick = () => {
+    if (!isTouchDevice || !hasActions) return;
+
+    setShowTouchActions((current) => !current);
+  };
 
   return (
     <div
+      onClick={handleCardClick}
       className={`group relative overflow-hidden rounded-2xl transition-all duration-500
         ${
           isLight
             ? "bg-white border border-zinc-200 shadow-lg hover:shadow-2xl"
             : "bg-white/5 border border-zinc-800 hover:border-zinc-700"
         }
+        ${hasActions && isTouchDevice ? "cursor-pointer" : ""}
         hover:-translate-y-2`}
     >
       {/* Project Image */}
@@ -31,13 +62,16 @@ export default function ProjectCard({ project }) {
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-110"
+          className={`object-cover transition-transform duration-500 ${
+            showTouchActions ? "scale-110" : ""
+          } md:group-hover:scale-110`}
         />
 
-        {/* Overlay on hover */}
+        {/* Overlay actions */}
         <div
-          className={`absolute inset-0 flex items-center justify-center gap-4 
-          transition-all duration-300 opacity-0 group-hover:opacity-100
+          className={`absolute inset-0 z-10 items-center justify-center gap-4 transition-all duration-300
+          ${showTouchActions ? "flex opacity-100 pointer-events-auto" : "hidden opacity-0 pointer-events-none"}
+          md:flex md:opacity-0 md:pointer-events-none md:group-hover:pointer-events-auto md:group-hover:opacity-100
           ${isLight ? "bg-black/60" : "bg-black/80"}`}
         >
           {project.githubUrl && (
@@ -45,10 +79,12 @@ export default function ProjectCard({ project }) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white/20 rounded-full backdrop-blur-sm hover:bg-(--primary) hover:scale-110 transition-all duration-300"
+              className={overlayActionClass}
               aria-label="View GitHub Repository"
+              onClick={(event) => event.stopPropagation()}
             >
               <FiGithub className="text-white text-xl" />
+              <span>GitHub</span>
             </a>
           )}
           {project.liveUrl && (
@@ -56,10 +92,12 @@ export default function ProjectCard({ project }) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white/20 rounded-full backdrop-blur-sm hover:bg-(--primary) hover:scale-110 transition-all duration-300"
+              className={overlayActionClass}
               aria-label="View Live Site"
+              onClick={(event) => event.stopPropagation()}
             >
               <FiExternalLink className="text-white text-xl" />
+              <span>Live Site</span>
             </a>
           )}
         </div>
