@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <header className="md:w-280 lg:w-300 xl:w-325 2xl:w-350 md:m-auto z-10">
-      <nav className="flex justify-center md:justify-between gap-50 items-center px-8 mt-6">
+      <nav className="flex justify-between items-center md:px-0 mt-6">
         {/* Logo - using next/image */}
         <Image
           src="/logo.svg"
