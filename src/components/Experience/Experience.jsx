@@ -2,7 +2,6 @@
  * Experience Component (Server)
  * Lists all work experience entries
  */
-
 import ExperienceSections from "./ExperienceSections";
 
 export default function Experience() {
