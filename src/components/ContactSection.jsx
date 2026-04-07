@@ -45,7 +45,7 @@ export default function ContactSection() {
     {
       icon: FiLinkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/ahabibi.dev",
+      href: "https://linkedin.com/in/ahabibidev",
     },
     {
       icon: FiInstagram,
