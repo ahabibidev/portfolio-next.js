@@ -10,7 +10,7 @@
 
 A modern, responsive portfolio website built with Next.js, featuring smooth animations, dark/light theme support, and a functional contact form.
 
-[**View Live Demo →**](https://ahabibi.vercel.app)
+[**View Live →**](https://ahabibi.dev)
 
 <img src="public/images/projects/portfolio.webp" alt="Portfolio Preview" width="800" />
 
@@ -81,6 +81,7 @@ A modern, responsive portfolio website built with Next.js, featuring smooth anim
 | **Chatbot**       | [Botpress](https://botpress.com/)                         |
 | **Notifications** | [React Hot Toast](https://react-hot-toast.com/)           |
 | **Deployment**    | [Vercel](https://vercel.com/)                             |
+| **Domain**        | [Cloudflare](https://cloudflare.com/)                     |
 
 ---
 
@@ -225,7 +226,7 @@ src/
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shahreyarhabibi)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahabibidev)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ahabibi.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ahabibi.dev)
 
 </div>
 

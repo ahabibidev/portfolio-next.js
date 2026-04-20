@@ -11,7 +11,6 @@ export default function Footer() {
         <span className="text-(--text)">Ali Reza Habibi</span> | All Rights
         Reserved
       </p>
-      <p>Sponsored by Mansor Rahem</p>
     </footer>
   );
 }

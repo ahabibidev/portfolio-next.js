@@ -35,7 +35,7 @@ export const projects = [
       "A personal portfolio showcasing projects and skills with dark/light mode support.",
     image: "/images/projects/portfolio.webp",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "https://ahabibi.vercel.app",
+    liveUrl: "https://ahabibi.dev",
     githubUrl: "https://github.com/shahreyarhabibi/portfolio-next.js",
     featured: true,
   },
