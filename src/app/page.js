@@ -14,10 +14,12 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import BotpressChat from "@/components/BotpressChat";
 import ProjectsSection from "@/components/Projects/ProjectsSection";
+import JsonLd from "./json-ld";
 
 export default function Home() {
   return (
     <div>
+      <JsonLd />
       <Header />
       <main>
         <BotpressChat />
