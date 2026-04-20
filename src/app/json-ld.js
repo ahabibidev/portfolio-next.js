@@ -3,8 +3,11 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Ali Reza Habibi",
+    givenName: "Ali Reza",
+    familyName: "Habibi",
     alternateName: "ahabibidev",
     url: "https://ahabibi.dev",
+    image: "https://ahabibi.dev/images/developer.webp",
     jobTitle: "Software Engineer",
     description:
       "Full-Stack Software Engineer with 3+ years of experience specializing in Frontend development.",
@@ -27,7 +30,7 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Ali Reza Habibi",
-    alternateName: "ahabibidev",
+    alternateName: "ahabibi.dev",
     url: "https://ahabibi.dev",
   };
 

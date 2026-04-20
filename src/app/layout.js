@@ -9,6 +9,7 @@ export const metadata = {
   description:
     "Ali Reza Habibi — Full-Stack Software Engineer with 3+ years of experience specializing in Frontend development. Building seamless digital experiences across web, mobile, and desktop using React, Next.js, and TypeScript.",
 
+  applicationName: "Ali Reza Habibi",
   authors: [{ name: "Ali Reza Habibi", url: "https://ahabibi.dev" }],
   creator: "Ali Reza Habibi",
   publisher: "Ali Reza Habibi",
@@ -19,12 +20,14 @@ export const metadata = {
   },
 
   icons: {
+    shortcut: "/favicon.ico",
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" }, // browser tab
+      { url: "/favicon.ico" },
       { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" }, // Google
       { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" }, // browser tab
     ],
-    apple: "/apple-touch-icon.png",
+    apple: "/favicon.png",
   },
 
   // ✅ Open Graph (Facebook, LinkedIn, etc.)
