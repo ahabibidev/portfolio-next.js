@@ -75,7 +75,7 @@ export default function HeroSection() {
 
         {/* Social Links */}
         <div className="flex gap-5 mt-5">
-          <a aria-label="Send me an Email" href="mailto:ahabibidev@gmail.com">
+          <a aria-label="Send me an Email" href="mailto:contact@ahabibi.dev">
             <FaRegEnvelope className="text-(--text) text-xl" />
           </a>
           <a
