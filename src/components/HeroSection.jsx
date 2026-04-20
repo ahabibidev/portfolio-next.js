@@ -86,7 +86,7 @@ export default function HeroSection() {
           </a>
           <a
             aria-label="Visit my GitHub Profile"
-            href="https://github.com/shahreyarhabibi"
+            href="https://github.com/ahabibidev"
           >
             <BsGithub className="text-(--text) text-xl" />
           </a>

@@ -40,7 +40,7 @@ export default function ContactSection() {
     {
       icon: FiGithub,
       label: "GitHub",
-      href: "https://github.com/shahreyarhabibi",
+      href: "https://github.com/ahabibidev",
     },
     {
       icon: FiLinkedin,

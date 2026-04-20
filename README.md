@@ -98,7 +98,7 @@ A modern, responsive portfolio website built with Next.js, featuring smooth anim
 1. **Clone the repository**
 
    ```
-   git clone https://github.com/shahreyarhabibi/portfolio-next.js.git
+   git clone https://github.com/ahabibidev/portfolio-next.js.git
    cd portfolio-next.js
    ```
 
@@ -224,7 +224,7 @@ src/
 
 **Ali Reza Habibi** — Software Engineer
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shahreyarhabibi)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ahabibidev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahabibidev)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ahabibi.dev)
 
@@ -248,7 +248,7 @@ This project is licensed under the **GNU Affero General Public License v3.0** - 
 
 <div align="center">
 ⭐ Star this repo if you found it helpful!
-<img src="https://img.shields.io/github/stars/shahreyarhabibi/portfolio-next.js?style=social" alt="GitHub Stars" />
+<img src="https://img.shields.io/github/stars/ahabibidev/portfolio-next.js?style=social" alt="GitHub Stars" />
 <br/>
 <br/>
 Made with ❤️ and ☕ by Ali Reza Habibi

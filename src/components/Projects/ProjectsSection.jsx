@@ -99,7 +99,7 @@ export default function ProjectsSection() {
       {/* View More Button (optional) */}
       <div className="flex justify-center mt-8">
         <a
-          href="https://github.com/shahreyarhabibi"
+          href="https://github.com/ahabibidev"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 border-2 border-(--primary) text-(--primary) rounded-full font-medium transition-all duration-300 hover:bg-(--primary) hover:text-white"

@@ -14,7 +14,7 @@ export const projects = [
     image: "/images/projects/hesabi.webp",
     technologies: ["Next.js", "Tailwind CSS", "SQLite"],
     liveUrl: "https://hesabiapp.vercel.app",
-    githubUrl: "https://github.com/shahreyarhabibi/hesabi",
+    githubUrl: "https://github.com/ahabibidev/hesabi",
     featured: true,
   },
   {
@@ -25,7 +25,7 @@ export const projects = [
     image: "/images/projects/qimat.webp",
     technologies: ["Next.js", "Tailwind CSS", "Drizzle"],
     liveUrl: "https://qimat.vercel.app",
-    githubUrl: "https://github.com/shahreyarhabibi/qimat",
+    githubUrl: "https://github.com/ahabibidev/qimat",
     featured: true,
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     image: "/images/projects/portfolio.webp",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://ahabibi.dev",
-    githubUrl: "https://github.com/shahreyarhabibi/portfolio-next.js",
+    githubUrl: "https://github.com/ahabibidev/portfolio-next.js",
     featured: true,
   },
 
@@ -49,7 +49,7 @@ export const projects = [
     technologies: ["PHP", "Bootstrap", "Chart.js"],
     liveUrl: "https://habibihospital.great-site.net",
     githubUrl:
-      "https://github.com/shahreyarhabibi/-Habibi-Hospital-Management-System",
+      "https://github.com/ahabibidev/-Habibi-Hospital-Management-System",
     featured: false,
   },
 
@@ -60,7 +60,7 @@ export const projects = [
       "A full-service digital agency website delivering marketing, graphic design, and modern web development solutions.",
     image: "/images/projects/mowj.webp",
     technologies: ["Wordpress", "Elementor", "PHP", "MySQL"],
-    liveUrl: "https://shahreyarhabibi.github.io/mowj-website-static",
+    liveUrl: "https://ahabibidev.github.io/mowj-website-static",
     featured: false,
   },
 
