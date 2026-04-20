@@ -25,8 +25,8 @@ export default function ContactSection() {
     {
       icon: FiMail,
       label: "Email",
-      value: "ahabibidev@gmail.com",
-      href: "mailto:ahabibidev@gmail.com",
+      value: "contact@ahabibi.dev",
+      href: "mailto:contact@ahabibi.dev",
     },
     {
       icon: FiMapPin,
