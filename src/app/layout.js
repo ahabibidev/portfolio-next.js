@@ -25,9 +25,10 @@ export const metadata = {
       { url: "/favicon.ico" },
       { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" }, // Google
       { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.png", sizes: "450x450", type: "image/png" },
       { url: "/favicon.svg", type: "image/svg+xml" }, // browser tab
     ],
-    apple: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
 
   // ✅ Open Graph (Facebook, LinkedIn, etc.)
