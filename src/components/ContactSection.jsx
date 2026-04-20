@@ -16,6 +16,7 @@ import {
   FiGithub,
   FiLinkedin,
   FiInstagram,
+  FiTwitter,
 } from "react-icons/fi";
 
 export default function ContactSection() {
@@ -48,9 +49,9 @@ export default function ContactSection() {
       href: "https://linkedin.com/in/ahabibidev",
     },
     {
-      icon: FiInstagram,
-      label: "Instagram",
-      href: "https://instagram.com/_habibei_",
+      icon: FiTwitter,
+      label: "X",
+      href: "https://x.com/ahabibidev",
     },
   ];
 
