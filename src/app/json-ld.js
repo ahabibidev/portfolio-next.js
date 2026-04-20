@@ -27,6 +27,7 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Ali Reza Habibi",
+    alternateName: "ahabibidev",
     url: "https://ahabibi.dev",
   };
 

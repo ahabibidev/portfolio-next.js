@@ -19,7 +19,12 @@ export const metadata = {
   },
 
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" }, // browser tab
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" }, // Google
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 
   // ✅ Open Graph (Facebook, LinkedIn, etc.)
