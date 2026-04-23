@@ -10,13 +10,13 @@ export const metadata = {
     "Ali Reza Habibi — Full-Stack Software Engineer with 3+ years of experience specializing in Frontend development. Building seamless digital experiences across web, mobile, and desktop using React, Next.js, and TypeScript.",
 
   applicationName: "Ali Reza Habibi",
-  authors: [{ name: "Ali Reza Habibi", url: "https://ahabibi.dev" }],
+  authors: [{ name: "Ali Reza Habibi", url: "https://ahabibi.dev/" }],
   creator: "Ali Reza Habibi",
   publisher: "Ali Reza Habibi",
 
   // ✅ Canonical URL — prevents duplicate content issues
   alternates: {
-    canonical: "https://ahabibi.dev",
+    canonical: "https://ahabibi.dev/",
   },
 
   icons: {
@@ -37,7 +37,7 @@ export const metadata = {
     description:
       "Full-Stack Software Engineer with 3+ years of experience specializing in Frontend development.",
     type: "website",
-    url: "https://ahabibi.dev",
+    url: "https://ahabibi.dev/",
     siteName: "Ali Reza Habibi",
     locale: "en_US",
     images: [
@@ -61,7 +61,7 @@ export const metadata = {
   },
 
   // ✅ Tell Google this is YOUR personal page
-  metadataBase: new URL("https://ahabibi.dev"),
+  metadataBase: new URL("https://ahabibi.dev/"),
 };
 
 export default function RootLayout({ children }) {
