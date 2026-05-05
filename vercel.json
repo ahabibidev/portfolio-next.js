@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/hesabi/:path*",
+      "destination": "https://hesabiapp.vercel.app/:path*"
+    },
+    {
+      "source": "/qimat/:path*",
+      "destination": "https://qimat.vercel.app/:path*"
+    }
+  ]
+}
