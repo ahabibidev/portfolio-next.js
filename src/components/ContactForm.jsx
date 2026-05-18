@@ -142,7 +142,7 @@ export default function ContactForm() {
           required
         />
       </div>
-
+/**
       {/* Email Field */}
       <div className={inputWrapperClass("email")}>
         <FiMail className={iconClass("email")} />
@@ -159,7 +159,7 @@ export default function ContactForm() {
           required
         />
       </div>
-
+*/
       {/* Subject Field */}
       <div className={inputWrapperClass("subject")}>
         <FiFileText className={iconClass("subject")} />
