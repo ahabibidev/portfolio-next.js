@@ -144,7 +144,7 @@ export default function ContactForm() {
       </div>
 
       {/* Email Field */}
-      <div className={inputWrapperClass("email" hidden)}>
+      <div className={inputWrapperClass("email") hidden}>
         <FiMail className={iconClass("email")} />
         <input
           type="email"
