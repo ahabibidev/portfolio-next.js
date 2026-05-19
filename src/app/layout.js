@@ -9,6 +9,18 @@ export const metadata = {
   description:
     "Ali Reza Habibi — Full-Stack Software Engineer with 3+ years of experience specializing in Frontend development. Building seamless digital experiences across web, mobile, and desktop using React, Next.js, and TypeScript.",
 
+  keywords: [
+    "Ali Reza Habibi",
+    "ahabibidev",
+    "ahabibi.dev",
+    "علی رضا حبیبی",
+    "علی‌رضا حبیبی",
+    "علی رضا هبیبی",
+    "Software Engineer",
+    "Full-Stack Developer",
+    "Frontend Developer",
+  ],
+
   applicationName: "Ali Reza Habibi",
   authors: [{ name: "Ali Reza Habibi", url: "https://ahabibi.dev/" }],
   creator: "Ali Reza Habibi",

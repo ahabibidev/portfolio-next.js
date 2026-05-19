@@ -5,7 +5,16 @@ export default function JsonLd() {
     name: "Ali Reza Habibi",
     givenName: "Ali Reza",
     familyName: "Habibi",
-    alternateName: ["ahabibi.dev", "Ali Reza Habibi Portfolio"],
+    alternateName: [
+      "ahabibi.dev",
+      "ahabibidev",
+      "Ali Reza Habibi Portfolio",
+      "علی رضا حبیبی",
+      "علی‌رضا حبیبی",
+      "علیرضا حبیبی",
+      "علی حبیبی",
+      "علی",
+    ],
     url: "https://ahabibi.dev/",
     image: "https://ahabibi.dev/images/developer.webp",
     jobTitle: "Software Engineer",
@@ -30,7 +39,14 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Ali Reza Habibi",
-    alternateName: ["ahabibi.dev", "Ali Reza Habibi Portfolio"],
+    alternateName: [
+      "ahabibi.dev",
+      "ahabibidev",
+      "Ali Reza Habibi Portfolio",
+      "علی رضا حبیبی",
+      "علی‌رضا حبیبی",
+      "علی رضا هبیبی",
+    ],
     url: "https://ahabibi.dev/",
   };
 
