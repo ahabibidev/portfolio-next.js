@@ -28,7 +28,7 @@ export default function Header() {
   const { isLight, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <header className="md:w-280 lg:w-300 xl:w-325 2xl:w-350 md:m-auto z-10">
+    <header className="md:w-full md:max-w-[1400px] md:m-auto z-10">
       <nav className="flex justify-between items-center md:px-0 mt-6">
         {/* Logo - using next/image */}
         <Image

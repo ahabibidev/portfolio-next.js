@@ -28,7 +28,7 @@ export default function EducationSections({
           <h2 className="text-md md:text-xl font-bold text-(--text)">
             {title}
           </h2>
-          <p className="md:text-[16px] text-sm md:mr-20 whitespace-nowrap">
+          <p className="md:text-[16px] text-sm md:ml-4 md:mr-0 whitespace-nowrap">
             {year}
           </p>
         </div>

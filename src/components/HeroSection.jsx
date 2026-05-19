@@ -22,7 +22,7 @@ export default function HeroSection() {
   return (
     <section
       id="#"
-      className="flex-col md:w-280 lg:w-300 xl:w-325 2xl:w-350 m-auto flex justify-between md:flex-row md:mt-20 mt-10 items-center md:gap-20 gap-10"
+      className="flex-col md:w-full md:max-w-[1400px] m-auto flex justify-between md:flex-row md:mt-20 mt-10 items-center md:gap-20 gap-10"
     >
       {/* Left Content */}
       <div className="flex items-start flex-col md:w-1/2 gap-6">

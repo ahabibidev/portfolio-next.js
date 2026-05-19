@@ -266,8 +266,7 @@ export async function POST(request) {
     const BREVO_API_KEY = process.env.BREVO_API_KEY;
     const SENDER_EMAIL = process.env.SENDER_EMAIL;
     const SENDER_NAME = process.env.SENDER_NAME || "Portfolio Contact Form";
-    const RECIPIENT_EMAIL =
-      process.env.RECIPIENT_EMAIL || "shahreyarhabibi@gmail.com";
+    const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL;
 
     if (!BREVO_API_KEY || !SENDER_EMAIL) {
       console.error("Missing Brevo configuration");

@@ -13,7 +13,7 @@ export default function ExperienceSections({
   isPresentJob,
 }) {
   return (
-    <div className="flex flex-col w-full relative whitespace-nowrap">
+    <div className="flex flex-col w-full relative whitespace-nowrap md:whitespace-normal">
       {/* Timeline dot and line */}
       <span
         className={`${hidden} absolute -ml-1 md:top-2 top-1 w-3 h-3 rounded-full ${dotcolor} 
@@ -36,7 +36,7 @@ export default function ExperienceSections({
           <a href={href} className="text-md md:text-xl font-bold text-(--text)">
             {title}
           </a>
-          <p className="whitespace-nowrap md:text-[16px] text-sm md:mr-20 md:relative md:left-5">
+          <p className="whitespace-nowrap md:text-[16px] text-sm md:ml-4 md:mr-0">
             {year}
           </p>
         </div>
