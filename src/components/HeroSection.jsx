@@ -58,7 +58,7 @@ export default function HeroSection() {
 
         {/* Profile Image - next/image */}
         <Image
-          src="/images/developer.webp"
+          src="/images/ali-reza-habibi.webp"
           alt="Ali Reza Habibi Portrait"
           width={400}
           height={500}

@@ -16,7 +16,7 @@ export default function JsonLd() {
       "علی",
     ],
     url: "https://ahabibi.dev/",
-    image: "https://ahabibi.dev/images/developer.webp",
+    image: "https://ahabibi.dev/images/ali-reza-habibi.webp",
     jobTitle: "Software Engineer",
     description:
       "Full-Stack Software Engineer with 3+ years of experience specializing in Frontend development.",
