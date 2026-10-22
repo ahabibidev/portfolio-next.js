@@ -212,7 +212,7 @@ export default function PersianPage() {
               مقیم <span className="hero-section-span">کابل، افغانستان</span> با
               بیش از <span className="hero-section-span">۳ سال</span> تجربه،
               متخصص در <span className="hero-section-span">فرانت‌اند</span> و
-              ساخت تجربه‌های دیجیتال یکپارچه برای وب، موبایل و دسکتاپ.
+              ساخت تجربه‌های دیجیتال یکپارچه برای وب، موبایل و دسکتاپ هستم.
             </p>
 
             <a
